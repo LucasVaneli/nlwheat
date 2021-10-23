@@ -19,16 +19,22 @@
           <span>
             <img src="images/build.svg" alt="Selo Rocketseat" />
           </span>
-          <img src="https://lorempixel.com/185/185/people" alt="Foto Pessoal" />
+          <img
+            src="https://lorempixel.com/185/185/people"
+            alt="Foto Pessoal"
+            id="UserImage"
+          />
         </div>
 
         <h1 id="userName">Lucas Vaneli</h1>
-        <a href="https://github.com/LucasVaneli" target="_blank">
+        <a id="userLink" href="https://github.com/LucasVaneli" target="_blank">
           <img src="images/github 2.svg" alt="ícone github" />
           LucasVaneli
         </a>
 
-        <p>An instructor focused on helping people star programing for web</p>
+        <p id="userBio">
+          An instructor focused on helping people star programing for web
+        </p>
 
         <ul id="socialLinks">
           <li class="instagram">
@@ -49,23 +55,6 @@
         </ul>
       </div>
     </main>
-    <script>
-      const LinksSocialMedia = {
-        github: 'LucasVaneli',
-        instagram: 'vanelizinn',
-        facebook: 'lucas.vaneli.9',
-        twitter: 'LucasVaneli'
-      }
-
-      function changeSocialMediaLinks() {
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute('class')
-
-          li.children[0].href = `https://www.${social}.com/${LinksSocialMedia[social]}`
-        }
-      }
-
-      changeSocialMediaLinks()
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
